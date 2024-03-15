@@ -1,19 +1,12 @@
 <template>
-  <p class="text-primary-color position-absolute-center">
-    {{ userInfo.email }} <br />
-    {{ userInfo.phone }}
-  </p>
+  <div class="text-center my-10">
+    <h3 class="text-20 mb-3">Js 版本</h3>
+    <CKEditor />
+  </div>
 </template>
 
 <script setup>
-import { storeToRefs } from 'pinia'
-import { useUserInfoStore } from '@/stores/userStore.js'
-
-// store
-const { getUserInfo } = useUserInfoStore()
-const { userInfo } = storeToRefs(useUserInfoStore())
-
-getUserInfo()
+import CKEditor from '@/components/CKEditor.vue'
 </script>
 
 <style lang='scss' scope></style>
