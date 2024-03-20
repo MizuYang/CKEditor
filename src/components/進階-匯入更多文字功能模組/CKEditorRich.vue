@@ -31,6 +31,25 @@ const editorDesign = ref('') // 默认内容
 
 const editorConfig = reactive({
   language: 'zh',
+  fontSize: {
+    options: [
+      // 9,
+      // 11,
+      // 13,
+      // 'default',
+      // 17,
+      // 19,
+      // 21,
+      'tiny', // 特小
+      'small', // 小
+      'big', // 大
+      'huge'// 特大
+    ]
+  },
+  // fontSize: {
+  //   options: [
+  //   ]
+  // },
   // toolbar: {
   //   items: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|', 'outdent', 'indent', '|', 'imageUpload', 'blockQuote', 'insertTable', 'mediaEmbed', 'undo', 'redo','|','fontColor','fontFamily','fontSize','fontBackgroundColor',],
   // },
